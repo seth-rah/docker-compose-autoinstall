@@ -1,5 +1,5 @@
 if [ "$(id -un)" != "root" ]
-        then echo "Please run this script as sudo before continuing"
+        then echo "Please run this script as root or with sudo before continuing"
         exit
 fi
 echo "please enter the name of the ubuntu user that will be running docker commands on this server"
