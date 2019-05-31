@@ -10,6 +10,7 @@ else
         echo "user does not exist, stopping"
 		exit
 fi
+apt-get remove lxc-docker
 apt-get purge lxc-docker
 apt-get remove docker-engine
 apt-get purge docker-engine
@@ -20,7 +21,7 @@ apt-get update
 apt-get -y install docker-ce
 service docker start
 usermod -aG docker $line
-curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 echo " "
 echo " "
