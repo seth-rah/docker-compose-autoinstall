@@ -1,11 +1,9 @@
 # docker-compose-autoinstall
 Streamline the process of installing docker with docker-compose on ubuntu servers.
 
-Just run the following command in your ubuntu server to download the script
+Run the following command in your ubuntu server to download and execute the script. Root permissions are required for this script to operate.
 
-`wget https://raw.githubusercontent.com/seth-rah/docker-compose-autoinstall/master/install.sh` 
-
-Once downloaded run `sh ./install.sh` as root
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/seth-rah/docker-compose-autoinstall/master/install.sh)"`
 
 ## Features
 
